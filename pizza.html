@@ -1,0 +1,12 @@
+ <script>
+var prix = parseFloat (prompt("Quel est le prix?"));
+var montant = parseInt (prompt("Combien en veut tu acheter?"));
+var tax = 1.13; //donne une valeure a la tax
+function calculeCout(){ //fonction pour calculer le cout total
+ var total = parseFloat(prix*montant*tax); //calcule le prix
+ total = Math.floor(total * 100) / 100;
+(total.toFixed(2)); //arrondis les chiffres decimaux
+alert ("Le prix total est " + (total) + "$"); //affiche le prix total
+}
+calculeCout(); //appelle la fonction
+ </script>
