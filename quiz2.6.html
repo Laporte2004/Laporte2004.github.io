@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>QUIZ (Travail 2.6)</h2>
+
+    <p>
+      Ces quoi les languages de code que nous avons vu à date?
+      <br />
+      <input id="qu1a" name="question1" type="radio" value="A" />
+      <label for="qu1a">C++ et turing</label>
+      <br />
+      <input id="qu1b" name="question1" type="radio" value="B" />
+      <label for="qu1b">HTML et Javascript</label>
+      <br />
+      <input id="qu1c" name="question1" type="radio" value="C" />
+      <label for="qu1c">Python et C sharp</label>
+      <br />
+      <input id="qu1d" name="question1" type="radio" value="D" />
+      <label for="qu1d">GO et SQL</label>
+
+      <br /><br />
+
+      Que veut dire RAM?
+      <br />
+      <input id="qu2a" name="question2" type="radio" value="A" />
+      <label for="qu2a">Rare Arbre Mousse</label>
+      <br />
+      <input id="qu2b" name="question2" type="radio" value="B" />
+      <label for="qu2b">Rapid Access Memory</label>
+      <br />
+      <input id="qu2c" name="question2" type="radio" value="C" />
+      <label for="qu2c">Rapif memory access</label>
+      <br />
+      <input id="qu2d" name="question2" type="radio" value="D" />
+      <label for="qu2d">Random Access Memory</label>
+      <br /><br />
+      On utilise quel site pour tester le code?
+      <br />
+      <input id="qu3a" name="question3" type="radio" value="A" />
+      <label for="qu3a">Playcode</label>
+      <br />
+      <input id="qu3b" name="question3" type="radio" value="B" />
+      <label for="qu3b">Friv</label>
+      <br />
+      <input id="qu3c" name="question3" type="radio" value="C" />
+      <label for="qu3c">Youtube</label>
+      <br />
+      <input id="qu3d" name="question3" type="radio" value="D" />
+      <label for="qu3d">Amazon</label>
+      <br /><br />
+
+      <input type="button" id="soumet" onclick="test()" value="submit" />
+      <br /><br />
+    </p>
+
+    <p id="demo"></p>
+
+    <script>
+
+      function test() {
+
+      var QU1 = document.getElementsByName("question1");
+      var QU2 = document.getElementsByName("question2");
+      var QU3 = document.getElementsByName("question3");
+      var score = 0
+
+      if (QU1[1].checked) {
+
+      score = score + 1
+
+      }
+
+      if (QU2[3].checked) {
+
+      score = score + 1
+
+      }
+
+      if (QU3[0].checked) {
+
+      score = score + 1
+
+      }
+
+      document.getElementById("demo").innerHTML = "SCORE: " + score + " / 3"
+
+      }
+    </script>
+  </body>
+</html>
